@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const todosRouter = require('./routes/todos');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = mongodb+srv://vishee:<db_Vishee@1234>@cluster0.9qw9r.mongodb.net/?retryWrites=true;
 app.use(express.json());
 
 mongoose.connect(process.env.MONGODB_URI, {
