@@ -4,10 +4,10 @@ const mongoose = require('mongoose');
 const todosRouter = require('./routes/todos');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env || 3000;
 app.use(express.json());
 
-mongoose.connect(mongodb+srv://vishee:<db_Vishee@1234>@cluster0.9qw9r.mongodb.net/?retryWrites=true, {
+mongoose.connect ((mongodb+srv://vishee:<db_Vishee@1234>@cluster0.9qw9r.mongodb.net/?retryWrites=true, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     serverSelectionTimeoutMS: 5000,
